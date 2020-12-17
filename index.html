@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		@font-face{
+			font-family: "SFC";
+			src: url(/fonts/SFCartoonistHand.ttf);
+		}
+		body{
+			background-color: #d7dce0;
+		}
+		.cardHolder{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%,-50%);
+			display: grid;
+			grid-template-columns: repeat(auto-fit,300px);
+			justify-content: center;
+		}
+		.card{
+			position: relative;
+			width: 250px;
+			height: 150px;
+			margin: 60px 30px;
+		}
+		.card:hover img{
+			top: -50%;
+		}
+		.card:hover .info{
+			top: 50%;
+		}
+		.card img{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			transition: 0.5s;
+		}
+		.card .info{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background-color: #fff;
+			box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.6);
+			transition: 0.5s;
+		}
+		.card .info .head{
+			position: relative;
+			top: -10px;
+			font-family: "SFC";
+			font-size: 25px;
+			letter-spacing: 1px;
+		}
+		.card .info .git{
+			left: 20%;
+		}
+		.card .info .insta{
+			left: 18%;
+		}
+		.details{
+			position: relative;
+			top: -15px;
+			padding: 0px 15px 15px;
+			font-family: "Comic sans MS";
+			font-size: 15px;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="cardHolder">
+		<div class="card">
+			<img src="github.png">
+			<div class="info">
+				<p class="head git">@Shadow129-sys</p>
+				<center>
+					<p class="Git details">I am a 1st year B.tech CSE AI_ML student from Techno Main Salt Lake</p>
+				</center>
+			</div>
+		</div>
+		<div class="card">
+			<img src="TwitterCard.png">
+			<div class="info">
+			</div>
+		</div>
+		<div class="card">
+			<img src="Instagram.jpg">
+			<div class="info">
+				<p class="head insta">@_.beta_wolf._7</p>
+				<center>
+					<p class="Git details">I am a compititive coder and a beginner in Web Dev. I use C++ for compititive coding</p>
+				</center>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
